@@ -1,0 +1,122 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body,html{
+  height: 100%;
+  overflow: hidden;
+  background-color: black;
+}
+
+.box{
+  width: 80%;
+  height: 100%;
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  margin: 0 auto;
+}
+header{
+  flex-grow: 2;
+  background-color: aqua;
+  display: flex;
+  align-items:flex-end;
+  justify-content: space-between;
+}
+.user_box{
+  display: flex;
+  align-items: flex-start;
+  margin-left: 2%;
+  margin-bottom: 2%;
+}
+#user_log{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: red;
+  display: inline-block;
+}
+
+#user_name{
+  width: 200px;
+  height: 50px;
+  background-color: red;
+  display: inline-block;
+  margin-left: 4px;
+
+}
+
+header button{
+  font-size: 14px;
+
+}
+
+.leaving_message{
+  position: absolute;
+  top: 30%;
+  right: calc(100% - 86%);
+}
+
+.admin{
+  position: absolute;
+  top:2%;
+  right: calc(100% - 86%);
+}
+
+#menu{
+  flex-grow: 1;
+  clear: both;
+  background-color: palegoldenrod;
+}
+#bodyer{
+  flex-grow: 6;
+  /* background-color: blue; */
+}
+footer{
+  flex-grow: 1;
+  /* background-color: brown; */
+}
+
+#starBox{
+  position: absolute;
+  top: 1px;
+}
+
+/* 设置粒子大小 */
+.star0{
+  height: 1px;
+  width: 1px;
+  opacity: 1;
+  position: absolute;
+}
+
+/* 第二种粒子大小 */
+.star1{
+  height: 2px;
+  width: 2px;
+  border-radius: 50%;
+  opacity: 1;
+  position: absolute;
+ 
+}
+/* 第三种粒子大小 */
+.star2{
+  height: 3px;
+  width: 3px;
+  border-radius: 50%;
+  opacity: 1;
+  position: absolute;
+ 
+}
+/* 第四种粒子大小 */
+.star3{
+  height: 4px;
+  width: 4px;
+  border-radius: 50%;
+  opacity: 1;
+  position: absolute;
+ 
+}

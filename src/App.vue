@@ -1,28 +1,25 @@
-<template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+ <template>
+  <div class="box">
+    <HeadBox></HeadBox>
+    <MenuBox> </MenuBox>
+    <BodyBox>
+      <router-view></router-view>
+    </BodyBox>
+    <FooterBox></FooterBox>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import HeadBox from '@/components/BlogHead.vue'
+import MenuBox from '@/components/BlogMenu.vue'
+import BodyBox from '@/components/BlogBody.vue'
+import FooterBox from '@/components/BlogFooter.vue'
 export default {
-  name: 'App',
   components: {
-    HelloWorld
-  }
+    HeadBox,
+    MenuBox,
+    BodyBox,
+    FooterBox
+  },
 }
-</script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
+  </script>  
